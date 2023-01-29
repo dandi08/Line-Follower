@@ -1,8 +1,5 @@
-# Line-Follower
+# Line-Follower Project - Team Watt's Up
 
-The Link of the video: https://drive.google.com/file/d/1C6JqfFnhgc2-JcmaQ20pVZuEGashmn9O/view?usp=sharing
-
-# LedMatrixGame
 <details closed>
 <summary>Task requirements and objective 🏗️</summary>
 <br>
@@ -13,13 +10,13 @@ The Link of the video: https://drive.google.com/file/d/1C6JqfFnhgc2-JcmaQ20pVZuE
 <details close>
 <summary>Implementation 🧑‍💻️</summary>
 <br>
-  For this homework our teacher organised a 12 hours hackaton at our university. We built the robot prior to the hackaton. To build the robot we used a deafult line follower kit and an Arduino Uno. 
+  For this homework our teacher organised a 12 hours hackaton at our university. To build the robot we used an Arduino Uno along side with a line follower kit that contained robot's body which was 3D printed, 2 wheels, a small ball and QTR-8A sensors (out of which we used only 6 for line detection). We built the it prior to the hackaton during our laboratory.
   
-  The bigger challege for us was to program the robot. First, we tried to program the robot to do the first task: self-calibrate when the robot is placed over the black line. We tried to do this by giving power to both motors but in opposite directions so that the robot doesn't really move but rather rotates over the line, but since the motors were not perfect nor having same power we couldn't make it work despite trying to give different values to each one. After losing quite some time on this idea we decided that we should split the taks and instead of both of us working on same thing, one should start programming the robot to follow the line and other to do the self-calibrate. Working like this proved to be very efficient and we managed to do a pretty good job in the end. In terms of self-calibrating instead of using just motor power we used the sensors to detect if the robot passed over the black strip with all the sesors and should turn in the other direction.
+  A bigger challege for us was to program the robot. First, we tried to program the robot to do the first task: self-calibrate when the robot is placed over the black line. We tried to do this by giving power to both motors but in opposite directions so that the robot doesn't really move but rather rotates over the line, but since the motors were not perfect nor having same power we couldn't make it work despite trying to give different values to each one. After losing quite some time on this idea we decided that we should split the taks and instead of both of us working on same thing, one should start programming the robot to follow the line and other to do the self-calibrate. Working like this proved to be very efficient and we managed to do a pretty good job in the end. In terms of self-calibrating instead of using just motor power we used the sensors to detect if the robot passed over the black strip with all the sesors and should turn in the other direction.
   
   On the other hand, for the line following we used PID in order to program the robot starting from a simple code that "kind of" followed the line. In the initial code, motors were receiving power in the range of -50:50 multiplied with PID accordingly. First we shrinked the inveral to -30:30 and raised the P(Proportional) value. After we tought that we have a pretty good value of P we started to try values for D(Derivative) as well in order to make the robot return faster to the line and not wobble after a turn. In terms of the last variable, Integral, we tried to use it with some small values but it did not seem to help. After we found some good values for P and D we started to increase the speed and fine tune the parameters in the meantime accordigly.
   
-  In terms of results we had our best time during a practice session: 19:40 seconds. After that we tried to add some changes to our parameters that were supposed to improve the time but unfortunately our fastest lap during official run was 21:00 seconds which is still a good time. For both of us this heackaton was really fun and interesting, we developed our communication and teamwork skills as well as our knowledge. Props to our teacher and TAs for this idea and since it was our last we want to thank them for this great, fun and interesting course!
+  In terms of results we had our best time during a practice session: 19:40 seconds. After that we tried to add some changes to our parameters that were supposed to improve the time but unfortunately our fastest lap during official run was 21:00 seconds which is still a good time. For both of us this heackaton was really fun and interesting, we developed our communication and teamwork skills as well as our knowledge. Props to our teacher and TAs for this idea and since it was our last homework I want to thank them not only for this great competition where I had a lot of fun but also learnt new things and developed my communication and team work skills but also for this fun and interesting course!
   
 </details>
 
@@ -32,5 +29,5 @@ Setup photos:
   <img src="https://user-images.githubusercontent.com/63961737/213797273-5886c48c-5149-44ba-9dc9-f26484e6fd3f.jpeg" width="200">
 </div>
 
-Video link: https://drive.google.com/file/d/1u10tr5Iw1ubGaUx9A8igSYLICWKHucXJ/view?usp=share_link
+Video link: https://drive.google.com/file/d/1C6JqfFnhgc2-JcmaQ20pVZuEGashmn9O/view?usp=sharing
 </details>
